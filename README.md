@@ -1,4 +1,4 @@
-# js-storage
+# perm-storage
 A Temp storage pattern for Javascript
 
 ## Installation

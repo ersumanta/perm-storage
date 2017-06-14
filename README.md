@@ -25,7 +25,12 @@ permStorage.get("id");
 ### Set an Object to storage
 permStorage.setObj("id", { id: 1, name: "Sumanta Sarkar" });
 
-### Get an Item from storage
+### Get an Object from storage
 permStorage.getObj("id");
 
+### Delete an item from storage
+permStorage.delete("id");
+
+### Delete an Object from storage
+permStorage.deleteObj("id");
 

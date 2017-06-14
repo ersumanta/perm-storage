@@ -1,0 +1,31 @@
+{
+  "name": "simple-js-storage",
+  "version": "1.0.5",
+  "description": "A Simple JS Storage",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src/index.js --out-file ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersumanta/js-storage.git"
+  },
+  "keywords": [
+    "JS",
+    "Storage"
+  ],
+  "author": "Sumanta Sarkar <sumanta.sr@gmail.com> (http://nextgn.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ersumanta/js-storage/issues"
+  },
+  "homepage": "https://github.com/ersumanta/js-storage#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

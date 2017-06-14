@@ -1,28 +1,16 @@
 "use strict";
 
-var _ = require("underscore");
-
-var obj = {};
-
 module.exports = {
     get: function get(id) {
-        return obj[id];
-    },
-    getAndClear: function getAndClear(id) {
-        var oldVal = _.clone(obj[id]);
-        delete obj[id];
-        return oldVal;
+        return localStorage.getItem(id);
     },
     set: function set(id, value) {
-        obj[id] = value;
+        localStorage.setItem(id, value);
     },
-    initialize: function initialize() {
-        console.log("--- js storage initialise ---");
-        if (!obj) {
-            obj = {};
-        }
+    getObj: function get(id) {
+        return JSON.parse(localStorage.getItem(id));
     },
-    reset: function reset() {
-        obj = {};
+    setObj: function set(id, value) {
+        localStorage.setItem(id, JSON.stringify(value));
     }
 };

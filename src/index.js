@@ -1,26 +1,14 @@
-var _ = require("underscore");
-
-var obj = {};
-
 module.exports = {
-    get: function (id) {
-        return obj[id];
+    get: function get(id) {
+        return localStorage.getItem(id);
     },
-    getAndClear: function (id) {
-        let oldVal = _.clone(obj[id])
-        delete obj[id];
-        return oldVal;
+    set: function set(id, value) {
+        localStorage.setItem(id, value);
     },
-    set: function (id, value) {
-        obj[id] = value;
+    getObj: function get(id) {
+        return JSON.parse(localStorage.getItem(id));
     },
-    initialize: function () {
-        console.log("--- js storage initialise ---");
-        if (!obj) {
-            obj = {};
-        }
-    },
-    reset: function () {
-        obj= {};
+    setObj: function set(id, value) {
+        localStorage.setItem(id, JSON.stringify(value));
     }
 };

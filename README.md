@@ -3,23 +3,29 @@ A Temp storage pattern for Javascript
 
 ## Installation
 
-npm install simple-js-storage --save
+npm install perm-storage --save
 
 ## Usage
 
 ### Initialisation
 // ES 5
 
-var jsStorage = require("simple-js-storage");
+var permStorage = require("perm-storage");
 
 // or ES 6
 
-import jsStorage from "simple-js-storage";
+import permStorage from "perm-storage";
 
 ### Set an Item to storage
-jsStorage.set("id", "A Value in String or JS Object");
+permStorage.set("id", "A Value in String");
 
 ### Get an Item from storage
-jsStorage.get("id");
+permStorage.get("id");
+
+### Set an Object to storage
+permStorage.setObj("id", { id: 1, name: "Sumanta Sarkar" });
+
+### Get an Item from storage
+permStorage.getObj("id");
 
 

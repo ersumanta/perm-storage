@@ -1,7 +1,7 @@
 {
-  "name": "simple-js-storage",
+  "name": "perm-storage",
   "version": "1.0.5",
-  "description": "A Simple JS Storage",
+  "description": "A Simple wrapper for permanent local storage",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,18 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ersumanta/js-storage.git"
+    "url": "git+https://github.com/ersumanta/perm-storage.git"
   },
   "keywords": [
     "JS",
+    "Local",
     "Storage"
   ],
   "author": "Sumanta Sarkar <sumanta.sr@gmail.com> (http://nextgn.net)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ersumanta/js-storage/issues"
+    "url": "https://github.com/ersumanta/perm-storage/issues"
   },
-  "homepage": "https://github.com/ersumanta/js-storage#readme",
+  "homepage": "https://github.com/ersumanta/perm-storage#readme",
   "dependencies": {
     "underscore": "^1.8.3"
   },

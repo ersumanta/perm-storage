@@ -1,6 +1,6 @@
 {
   "name": "perm-storage",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Simple wrapper for permanent local storage",
   "main": "./dist/index.js",
   "scripts": {
